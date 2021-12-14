@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>KIMSS</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/free.min.css" rel="stylesheet">
+    <!-- css END -->
+
+    <!-- jquery -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://finandbrew.com/wp-content/themes/bridge/js/plugins/modernizr-2.6.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://finandbrew.com/wp-content/themes/bridge/js/plugins.js"></script>
+    <!-- jquery END-->
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap END -->
+
+    <!-- custom -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- custom END -->
+</head>
+<body>
+    <!-- pc navi -->
+    <nav class="d-none d-sm-flex flex-wrap container p-2">
+        <ul class="nav me-auto">
+            <li class="nav-item align-self-center px-2 py-0 custom-logo">
+                <a href="#" class="d-block text-decoration-none">
+                    <img src="./image/logo.svg" alt="mdo" height="26">
+                </a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Music</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Video</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Graphic</a></li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Sign up</a></li>
+            <li class="nav-item align-self-center">
+                <div class="flex-shrink-0 dropdown">
+                    <a href="#" class="d-inline-block text-decoration-none dropdown-toggle" id="dropdownUserP" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="28" height="28" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-small shadow mt-2" aria-labelledby="dropdownUserP">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- pc navi END -->
+
+    <!-- mobile navi -->
+    <div class="custom-mobile-background">
+        <nav class="d-flex d-sm-none flex-wrap container p-2">
+            <ul class="nav col-4 text-start">
+                <li class="nav-item custom-menu-icon">
+                    <a href="#" class="nav-link active">
+                        <label></label>
+                        <label></label>
+                        <label></label>
+                        <label></label>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav col-4 justify-content-center">
+                <li class="nav-item align-self-center px-2 py-0 custom-logo">
+                    <a href="#" class="d-block text-decoration-none">
+                        <img src="./image/logo.svg" alt="mdo" height="26">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="col-4 text-end align-self-center">
+                <div class="flex-shrink-0 dropdown">
+                    <a href="#" class="d-inline-block text-decoration-none dropdown-toggle" id="dropdownUserM" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="28" height="28" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end text-small shadow mt-2" aria-labelledby="dropdownUserM">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="custom-mobile-menu p-3">
+            <div class="list-group list-group-flush border-bottom scrollarea">
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">Music</strong>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">Video</strong>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">Graphic</strong>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">Login</strong>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">Sign up</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- mobile navi END -->
+</body>
+<script>
+    $('.custom-menu-icon').on('click', function() {
+        if($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $('.custom-mobile-background').removeClass('active');
+        } else {
+            $(this).addClass('active');
+            $('.custom-mobile-background').addClass('active');
+        }
+    });
+</script>
+</html>
