@@ -14,37 +14,40 @@ body {
     min-width: 300px;
 }
 
-*, *:visited,
-a, a:visited {
+body *, body *:visited,
+body a, body a:visited {
     color: var(--main-text-color) !important;
     text-decoration: none;
     font-size: 0.9rem;
 }
 
-*:hover, *:focus,
-a:hover, a:focus {
+body *:hover, body *:focus,
+body a:hover, body a:focus {
     color: var(--main-text-color-hightlight) !important;
     text-decoration: none;
 }
 
-.custom-logo {
+body .custom-logo {
     margin-bottom: 2px;
     opacity: 0.6;
 
     transition: 0.3s;
 }
-.custom-logo:hover {
+
+body .custom-logo:hover {
     opacity: 0.9;
 }
 
-.custom-menu-icon {
+body .custom-menu-icon {
     cursor: pointer;
     transition: 0.3s;
 }
-.custom-menu-icon a {
+
+body .custom-menu-icon a {
     position: relative;
 }
-.custom-menu-icon a label {
+
+body .custom-menu-icon a label {
     width: 24px;
     height: 2px;
     background: var(--main-menu-color);
@@ -64,53 +67,66 @@ a:hover, a:focus {
     left: 2px;
     transition: 0.3s;
 }
-.custom-menu-icon a label:nth-child(1) {
+
+body .custom-menu-icon a label:nth-child(1) {
     position: absolute;
     top: 5px;
     /*background: red;*/
 }
-.custom-menu-icon a label:nth-child(2) {
+
+body .custom-menu-icon a label:nth-child(2) {
     position: absolute;
     top: 12px;
     /*background: blue;*/
 }
-.custom-menu-icon a label:nth-child(3) {
+
+body .custom-menu-icon a label:nth-child(3) {
     position: absolute;
     top: 12px;
     /*background: aqua;*/
 }
-.custom-menu-icon a label:nth-child(4) {
+
+body .custom-menu-icon a label:nth-child(4) {
     position: absolute;
     top: 20px;
     margin-bottom: 0;
     /*background: green;*/
 }
-.custom-menu-icon:hover a label {
+
+body .custom-menu-icon:hover a label {
     background: var(--main-menu-color-highlight);
 }
-.custom-menu-icon.active a label:nth-child(1) {
+
+body .custom-menu-icon.active a label:nth-child(1) {
     left: -100%;
     opacity: 0;
 }
-.custom-menu-icon.active a label:nth-child(2) {
+
+body .custom-menu-icon.active a label:nth-child(2) {
     transform: rotate(45deg);
 }
-.custom-menu-icon.active a label:nth-child(3) {
+
+body .custom-menu-icon.active a label:nth-child(3) {
     transform: rotate(-45deg);
 }
-.custom-menu-icon.active a label:nth-child(4) {
+
+body .custom-menu-icon.active a label:nth-child(4) {
     left: 100%;
     opacity: 0;
 }
-.custom-mobile-background {
+
+body .custom-mobile-background {
     transition: 0.3s;
 }
-.custom-mobile-background.active {
+
+body .custom-mobile-background.active {
 }
-.custom-mobile-background.active .custom-mobile-menu {
+
+body .custom-mobile-background.active .custom-mobile-menu {
     margin-left: 0;
 }
-.custom-mobile-menu {
+
+body .custom-mobile-menu {
     margin-left: -100%;
     position: fixed;
     height: 100vh;
@@ -120,19 +136,48 @@ a:hover, a:focus {
     transition: 0.5s ease-out;
 }
 
-.border-bottom {
+body .border-bottom {
     border-top: solid 1px var(--main-second-color);
     border-bottom: none !important;
 }
-.list-group-item {
+
+body .list-group-item {
     background: none;
-    border: 1px solid var(--main-second2-color);
+    border: none;
+    border-bottom: 1px solid var(--main-second2-color);
 }
 
-.list-group-item:hover {
+body .list-group-item:hover {
     color: var(--main-text-color);
     background: var(--main-opacity-color);
 }
-.list-group-item:hover strong {
+
+body .list-group-item:hover strong {
     color: var(--main-text-color-hightlight) !important;
 }
+
+
+body .form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--main-second-color);
+}
+
+body .form-check-input:checked {
+    background-color: var(--main-second-color);
+    border-color: var(--main-second-color);
+}
+
+body .form-switch .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='gray'/%3e%3c/svg%3e");
+}
+
+body .form-switch .form-check-input:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+}
+
+body .form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='gray'/%3e%3c/svg%3e");
+}
+
+

@@ -25,6 +25,7 @@
 
     <!-- custom -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_dark.css" rel="stylesheet">
     <!-- custom END -->
 </head>
 <body>
@@ -33,7 +34,7 @@
         <ul class="nav me-auto">
             <li class="nav-item align-self-center px-2 py-0 custom-logo">
                 <a href="#" class="d-block text-decoration-none">
-                    <img src="./image/logo.svg" alt="mdo" height="26">
+                    <img alt="mdo" class="logo-icon" height="26" src="./image/logo.svg">
                 </a>
             </li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Music</a></li>
@@ -41,11 +42,23 @@
             <li class="nav-item"><a href="#" class="nav-link px-2">Graphic</a></li>
         </ul>
         <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link px-2" href="#">
+                    <div class="form-check form-switch ps-0 d-inline-block">
+                        <label for="modeChangeP">Light</label>
+                    </div>
+                    <div class="form-check form-switch d-inline-block">
+                        <input class="form-check-input modeChange" id="modeChangeP" role="switch" type="checkbox">
+                        <label for="modeChangeP">Dark</label>
+                    </div>
+                </a>
+            </li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Login</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Sign up</a></li>
             <li class="nav-item align-self-center">
                 <div class="flex-shrink-0 dropdown">
-                    <a href="#" class="d-inline-block text-decoration-none dropdown-toggle" id="dropdownUserP" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="d-inline-block text-decoration-none dropdown-toggle" id="dropdownUserP"
+                       data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="mdo" width="28" height="28" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end text-small shadow mt-2" aria-labelledby="dropdownUserP">
@@ -78,7 +91,7 @@
             <ul class="nav col-4 justify-content-center">
                 <li class="nav-item align-self-center px-2 py-0 custom-logo">
                     <a href="#" class="d-block text-decoration-none">
-                        <img src="./image/logo.svg" alt="mdo" height="26">
+                        <img alt="mdo" class="logo-icon" height="26" src="./image/logo.svg">
                     </a>
                 </li>
             </ul>
@@ -125,20 +138,45 @@
                         <strong class="mb-1">Sign up</strong>
                     </div>
                 </a>
+                <a class="list-group-item list-group-item-action py-3 lh-tight" href="#">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                        <strong class="mb-1">
+                            <div class="form-check form-switch ps-0 d-inline-block">
+                                <label for="modeChangeM">Light</label>
+                            </div>
+                            <div class="form-check form-switch d-inline-block">
+                                <input class="form-check-input modeChange" id="modeChangeM" role="switch"
+                                       type="checkbox">
+                                <label for="modeChangeM">Dark</label>
+                            </div>
+                        </strong>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
     <!-- mobile navi END -->
 </body>
 <script>
-    $('.custom-menu-icon').on('click', function() {
-        if($(this).hasClass('active')) {
+    $('.custom-menu-icon').on('click', function () {
+        if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $('.custom-mobile-background').removeClass('active');
         } else {
             $(this).addClass('active');
             $('.custom-mobile-background').addClass('active');
         }
+    });
+
+    $('.modeChange').on('click', function () {
+        if ($(this).is(':checked')) {
+            $('body').addClass('dark');
+            $('.logo-icon').attr('src', '/image/logo_dark.svg');
+        } else {
+            $('body').removeClass('dark');
+            $('.logo-icon').attr('src', '/image/logo.svg');
+        }
+        $('.modeChange').prop('checked', $(this).is(':checked'));
     });
 </script>
 </html>
