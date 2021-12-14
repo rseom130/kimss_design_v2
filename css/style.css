@@ -133,7 +133,7 @@ body .custom-mobile-menu {
     width: 100vw;
     background: var(--main-bg-color);
     /*background: coral;*/
-    transition: 0.4s ease-out;
+    transition: 0.4s;
 }
 
 body .border-bottom {
