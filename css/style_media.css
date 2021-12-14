@@ -1,0 +1,10 @@
+body .custom-mobile-menu {
+    transition: 0.4s ease-out;
+}
+
+@media screen and (min-width: 576px) {
+    body .custom-mobile-menu {
+        margin-left: -100%;
+        transition: 0s;
+    }
+}
