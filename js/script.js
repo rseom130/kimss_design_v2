@@ -27,3 +27,17 @@ function f_theme_change() {
         });
     }
 }
+
+$(document).ready(function () {
+    f_widthSameHeight();
+});
+
+$(window).resize(function () {
+    f_widthSameHeight()
+});
+
+function f_widthSameHeight() {
+    var width = 0;
+    width = $('.width-same-height').width();
+    $('.width-same-height').height(width);
+}

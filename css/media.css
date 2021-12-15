@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) {
+    .custom-rank-title {
+        display: block;
+        width: 100%;
+        max-width: 155px;
+        margin-bottom: 1.2rem;
+    }
+
+    .custom-rank-contents {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+}
