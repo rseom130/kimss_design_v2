@@ -4,5 +4,119 @@ body {
 
 *, *:hover, *:focus, *:visited {
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
 }
 
+.custom-search-input-box {
+    position: relative;
+}
+
+.custom-search-input-box::after {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.8em;
+    color: var(--bg-color);
+    content: "Enter";
+    border: 1px solid var(--text-color);
+    border-radius: 0.125rem;
+    background: var(--text-color);
+}
+
+.custom-search-input {
+    min-width: 250px;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1em !important;
+    padding: 0.5rem 1rem;
+    background: var(--bg-color) !important;
+    color: var(--text-focus-color) !important;
+}
+
+.custom-notification {
+    min-width: 250px;
+}
+
+.custom-notification-header {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid var(--text-muted-color);
+    padding: .5rem;
+}
+
+.custom-notification-footer {
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid var(--text-muted-color);
+    padding: .5rem;
+}
+
+.custom-notification small {
+    font-size: 0.8em !important;
+}
+
+.custom-notification-image img {
+    border: 1px solid var(--text-muted-color);
+}
+
+.custom-no-cursor {
+    cursor: default;
+}
+
+.custom-no-hover:hover {
+    background: inherit !important;
+    border: inherit !important;
+    color: inherit !important;
+}
+
+.custom-text-color {
+    color: var(--text-color);
+}
+
+a.custom-text-color:hover {
+    color: var(--text-focus-color);
+}
+
+a.custom-text-color.active {
+    color: var(--text-highlight-color);
+}
+
+.custom-focus-color,
+a.custom-focus-color:focus {
+    color: var(--text-focus-color);
+}
+
+.custom-dropdown-menu {
+    padding: 0 !important;
+    border: 1px solid var(--text-color) !important;
+    background: var(--bg-color) !important;
+}
+
+.custom-dropdown-menu * {
+    background: none;
+    color: var(--text-color);
+}
+
+.custom-dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+    background-color: var(--text-focus-color);
+    color: var(--bg-color);
+}
+
+.custom-dropdown-menu li {
+    border-bottom: 1px solid var(--text-muted-color);
+}
+
+.custom-dropdown-menu li:last-child {
+    border: none;
+}
