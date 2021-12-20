@@ -49,14 +49,18 @@
 <nav class="d-flex flex-wrap container p-2">
     <ul class="nav me-auto">
         <li class="nav-item align-self-center px-2 py-0">
-            <a class="d-block text-decoration-none" href="#">
+            <a class="d-block text-decoration-none" href="/">
                 <img class="logo-icon custom-change-icon" height="30" src="./resource/logo.svg">
             </a>
         </li>
-        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="#">Music</a></li>
-        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="#">Video</a></li>
-        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="#">Graphic</a></li>
-        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="#">Board</a></li>
+        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="music.html">Music</a>
+        </li>
+        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="video.html">Video</a>
+        </li>
+        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="graphic.html">Graphic</a>
+        </li>
+        <li class="nav-item d-none d-sm-flex"><a class="nav-link px-2 custom-text-color" href="board.html">Board</a>
+        </li>
     </ul>
 
     <ul class="nav mt-1">
@@ -96,7 +100,8 @@
                 </a>
                 <ul aria-labelledby="dropdownNoti"
                     class="custom-dropdown-menu dropdown-menu dropdown-menu-end text-small mt-2 custom-notification">
-                    <li><a class="dropdown-item custom-notification-header" href="#">Show all notifications</a></li>
+                    <li><a class="dropdown-item custom-notification-header" href="notification.html">Show all
+                        notifications</a></li>
                     <li>
                         <a class="dropdown-item" href="#">
                             <div class="d-flex w-100 justify-content-between">
@@ -121,8 +126,8 @@
                 </a>
                 <ul aria-labelledby="dropdownUser"
                     class="custom-dropdown-menu dropdown-menu dropdown-menu-end text-small mt-2">
-                    <li><a class="dropdown-item" href="#">Sign in</a></li>
-                    <li><a class="dropdown-item" href="#">Sign up</a></li>
+                    <li><a class="dropdown-item" href="signin.html">Sign in</a></li>
+                    <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
                 </ul>
             </div>
         </li>
@@ -135,10 +140,10 @@
                 </a>
                 <ul aria-labelledby="dropdownMenu"
                     class="custom-dropdown-menu dropdown-menu dropdown-menu-end text-small mt-2">
-                    <li><a class="dropdown-item" href="#">Music</a></li>
-                    <li><a class="dropdown-item" href="#">Video</a></li>
-                    <li><a class="dropdown-item" href="#">Graphic</a></li>
-                    <li><a class="dropdown-item" href="#">Board</a></li>
+                    <li><a class="dropdown-item" href="music.html">Music</a></li>
+                    <li><a class="dropdown-item" href="video.html">Video</a></li>
+                    <li><a class="dropdown-item" href="graphic.html">Graphic</a></li>
+                    <li><a class="dropdown-item" href="board.html">Board</a></li>
                 </ul>
             </div>
         </li>
@@ -151,81 +156,120 @@
     <div class="container py-5 custom-rank">
         <div class="px-2 d-block d-sm-flex justify-content-between">
             <div class="custom-rank-title">
-                MUSIC
+                <a href="music.html">
+                    <strong>MUSIC</strong>
+                    <span>TOP 12</span>
+                </a>
             </div>
             <div class="custom-rank-contents">
                 <div class="row">
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2022.png')">
-                            <a href="#">2022 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2022.png')">
+                            </div>
+                            <strong>Love Letter 네번째 (Feat. BinHwa, 문어)</strong>
+                            <small>KIMSS (김슿슿)</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2021.png')">
-                            <a href="#">2021 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2021.png')">
+                            </div>
+                            <strong>Take A Bow (Feat. 이연정)</strong>
+                            <small>KIMSS</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2020.png')">
-                            <a href="#">2020 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2020.png')">
+                            </div>
+                            <strong>달보드레 (Feat. BinHwa, Helaine)</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2017.png')">
-                            <a href="#">2017 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2017.png')">
+                            </div>
+                            <strong>Can't take my eyes off you (Feat. BinHwa, 휘동)</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2016.png')">
-                            <a href="#">2016 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2016.png')">
+                            </div>
+                            <strong>Last Christmas</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/001.png')">
-                            <a href="#">001 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/001.png')">
+                            </div>
+                            <strong>문득 불러주고 싶어서</strong>
+                            <small>준숭이</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/002.png')">
-                            <a href="#">002 - Rb</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/002.png')">
+                            </div>
+                            <strong>Love Is So Sweet</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/003.png')">
-                            <a href="#">003 - Hwaan</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/003.png')">
+                            </div>
+                            <strong>Suga Luv (Feat. 윤서)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/004.png')">
-                            <a href="#">004 - Jerzy</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/004.png')">
+                            </div>
+                            <strong>D-Day 100 (Feat. BinHwa, Eastern.G, B-DY)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/005.png')">
-                            <a href="#">005 - Kimss</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/005.png')">
+                            </div>
+                            <strong>She's</strong>
+                            <small>KIMSS</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/006.png')">
-                            <a href="#">006 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/006.png')">
+                            </div>
+                            <strong>고3 (Feat. CZV, BinHwa, JJB, Scorner, Incubator)</strong>
+                            <small>KIMSS</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/007.png')">
-                            <a href="#">007 - Rb</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="music_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/007.png')">
+                            </div>
+                            <strong>너가 들을지 모르겠지만</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -235,81 +279,120 @@
     <div class="container py-5 custom-rank">
         <div class="px-2 d-block d-sm-flex justify-content-between">
             <div class="custom-rank-title">
-                VIDEO
+                <a href="video.html">
+                    <strong>VIDEO</strong>
+                    <span>TOP 12</span>
+                </a>
             </div>
             <div class="custom-rank-contents">
                 <div class="row">
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2022.png')">
-                            <a href="#">2022 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/001.png')">
+                            </div>
+                            <strong>Couple Song</strong>
+                            <small>준숭이</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2021.png')">
-                            <a href="#">2021 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/002.png')">
+                            </div>
+                            <strong>히히하헤호</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2020.png')">
-                            <a href="#">2020 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/003.png')">
+                            </div>
+                            <strong>Avec Amour</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2017.png')">
-                            <a href="#">2017 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/004.png')">
+                            </div>
+                            <strong>D-Day 100 (Feat. BinHwa, Eastern.G, B-DY)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2016.png')">
-                            <a href="#">2016 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/005.png')">
+                            </div>
+                            <strong>She's</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/008.png')">
-                            <a href="#">008 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/006.png')">
+                            </div>
+                            <strong>고3 (Feat. CZV, BinHwa, JJB, Scorner, Incubator)</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/009.png')">
-                            <a href="#">009 - Rb</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/007.png')">
+                            </div>
+                            <strong>그 놈 목소리</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/010.png')">
-                            <a href="#">010 - Hwaan</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/008.png')">
+                            </div>
+                            <strong>여자친구가 생겼으면 좋겠다</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/011.jpg')">
-                            <a href="#">011 - Jerzy</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/009.png')">
+                            </div>
+                            <strong>반반 (Feat. BinHwa)</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/012.png')">
-                            <a href="#">012 - Kimss</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/010.png')">
+                            </div>
+                            <strong>너뿐이야</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/013.jpg')">
-                            <a href="#">013 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/011.jpg')">
+                            </div>
+                            <strong>우리와 함께 하시죠 (Feat. BinHwa, BanZin)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/014.jpg')">
-                            <a href="#">014 - Rb</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="video_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/012.png')">
+                            </div>
+                            <strong>카페에 앉아 (Feat. 김민구 of 239.1034)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -318,94 +401,126 @@
     <div class="container py-5 custom-rank">
         <div class="px-2 d-block d-sm-flex justify-content-between">
             <div class="custom-rank-title">
-                GRAPHIC
+                <a href="graphic.html">
+                    <strong>GRAPHIC</strong>
+                    <span>TOP 12</span>
+                </a>
             </div>
             <div class="custom-rank-contents">
                 <div class="row">
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2022.png')">
-                            <a href="#">2022 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/013.jpg')">
+                            </div>
+                            <strong>수고했어 오늘 하루도</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2021.png')">
-                            <a href="#">2021 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/014.jpg')">
+                            </div>
+                            <strong>Main In Black</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2020.png')">
-                            <a href="#">2020 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/015.jpg')">
+                            </div>
+                            <strong>자장가</strong>
+                            <small>SokHwa & MelPo</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2017.png')">
-                            <a href="#">2017 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/016.png')">
+                            </div>
+                            <strong>전화를 끊은 후에</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/2016.png')">
-                            <a href="#">2016 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/017.png')">
+                            </div>
+                            <strong>햇빛 여행 (Sunshine Travel)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/015.jpg')">
-                            <a href="#">015 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/018.png')">
+                            </div>
+                            <strong>We Are (Feat. BinHwa, JJB, 휘동, Heech, Rhyme Crazy Fan)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/016.png')">
-                            <a href="#">016 - Rb</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/019.jpg')">
+                            </div>
+                            <strong>Color of season - 04. Brown (Feat. BinHwa)</strong>
+                            <small>SokHwa</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/017.png')">
-                            <a href="#">017 - Hwaan</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2017.png')">
+                            </div>
+                            <strong>새벽 5시 21분</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/001.png')">
-                            <a href="#">001 - Jerzy</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2016.png')">
+                            </div>
+                            <strong>6년만의 재회</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/002.png')">
-                            <a href="#">002 - Kimss</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2020.png')">
+                            </div>
+                            <strong>Epilogue</strong>
+                            <small>Jerzy</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/003.png')">
-                            <a href="#">003 - SokHwa</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2021.png')">
+                            </div>
+                            <strong>오래된 노래 (Feat. 동훈)</strong>
+                            <small>KIMSS (김슿슿)</small>
+                        </a>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 col-xl-2">
-                        <div class="custom-rank-contents-list width-same-height"
-                             style="background-image: url('./test/004.png')">
-                            <a href="#">004 - Rb</a>
-                        </div>
+                        <a class="custom-rank-contents-box" href="graphic_v.html">
+                            <div class="custom-rank-contents-list width-same-height"
+                                 style="background-image: url('./test/2022.png')">
+                            </div>
+                            <strong>2021, 2022</strong>
+                            <small>Kimss (김슿슿)</small>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </main>
-<!--
-all top 3 (slide)
-music top 10
-video top 10
-graphic top 10
--->
 <!-- main END -->
 </body>
 </html>

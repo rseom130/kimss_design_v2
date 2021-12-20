@@ -131,32 +131,36 @@ a.custom-focus-color:focus {
 }
 
 .custom-rank-title {
-    display: flex;
-    width: 12%;
-    font-weight: bold;
-    font-size: 2rem;
-    position: relative;
-    color: var(--text-color);
-    min-width: 155px;
+    /*display: flex;*/
+    width: 200px;
 }
 
-.custom-rank-title::after {
-    content: 'TOP 12';
+.custom-rank-title a {
+    text-decoration: none;
+}
+
+.custom-rank-title a strong {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.custom-rank-title a span {
     color: var(--text-highlight-color);
-    position: absolute;
-    top: 0.46em;
-    right: 0;
-    font-size: 1.2em;
+    margin-top: -0.5em;
+    font-size: 2.4em;
+    font-weight: bold;
     opacity: 0.8;
     display: inline-block;
     white-space: nowrap;
+    margin-left: 0.7em;
 }
 
 .custom-rank-contents {
-    display: flex;
+    /*display: flex;*/
+    display: block;
     align-items: center;
     width: 100%;
-    margin-left: 2rem;
 }
 
 .custom-rank-contents .row > div {
@@ -188,7 +192,37 @@ a.custom-focus-color:focus {
     padding-bottom: 0.1rem;
     transition: 0.3s;
 
-    background: linear-gradient(0deg, var(--bg-color-a85) 1.5rem, rgba(0, 0, 0, 0) 50%);
+    /*background: linear-gradient(0deg, var(--bg-color-a85) 1.5rem, rgba(0, 0, 0, 0) 50%);*/
+}
+
+a.custom-rank-contents-box {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+a.custom-rank-contents-box:hover {
+    color: inherit;
+    font-size: inherit;
+}
+
+a.custom-rank-contents-box strong {
+    font-size: 1.2em;
+    color: var(--text-focus-color);
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+a.custom-rank-contents-box small {
+    font-size: 1em;
+    color: var(--text-color);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .custom-rank-contents-list a:hover {
